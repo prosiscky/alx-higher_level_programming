@@ -1,8 +1,10 @@
 #!/usr/bin/python3
+
 """ A class that defines a rectangle based on 0-rectangle.py"""
 
 
 class Rectangle:
+
     """Represents A Rectangle"""
 
     def __init__(self, width=0, height=0):
