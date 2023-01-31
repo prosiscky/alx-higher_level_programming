@@ -63,7 +63,7 @@ class Rectangle:
 
             if self.__height == 0 or self.__width == 0:
                 return ("")
-            Rectangle = ""
+            rec = ""
             for i in range(self.__height):
                 for j in range(self.__width):
                     rec += "#"
