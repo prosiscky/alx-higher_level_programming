@@ -1,9 +1,10 @@
 #!/usr/bin/python3
-"""A class that defines a rectangle"""
+"""A class that defines a rectangle by: (based on 2-rectangle.py)"""
 
 
 class Rectangle:
     """Represents a Rectangle """
+
     def __init__(self, width=0, height=0):
         """Initializing the Rectangle class
 
@@ -29,7 +30,7 @@ class Rectangle:
         """ sets the width"""
         if not isinstance(value, int):
             raise TypeError("width must be an integer")
-        if value < 0:
+        elif value < 0:
             raise ValueError("width must be >= 0")
         self.__width = value
 
