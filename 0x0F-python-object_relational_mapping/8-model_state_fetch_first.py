@@ -7,7 +7,7 @@ mysql username, mysql password and database name
 - You must import State and Base from
 model_state - from model_state import Base, State
 - Your script should connect to a MySQL server running on localhost at
-port 3306
+port 3306(default port)
 - The state you display must be the first in states.id
 - You are not allowed to fetch all states from the database before displaying
 the result
@@ -17,7 +17,7 @@ the result
 """
 import sys
 from model_state import Base, State
-from sqlalchemy import (create_engine)
+from sqlalchemy import create_engine
 from sqlalchemy.orm import sessionmaker
 
 
