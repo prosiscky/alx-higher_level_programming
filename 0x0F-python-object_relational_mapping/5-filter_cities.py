@@ -21,8 +21,8 @@ if __name__ == "__main__":
     dbObj.execute("SELECT cities.name FROM cities INNER JOIN states ON\
             states.id=cities.state_id WHERE BINARY states.name\
             LIKE %s", (state, ))
-    stateList = dbObj.fetchall()
-    print(*[row[0] for row in selected_rows], sep=", ")
+    cityList = dbObj.fetchall()
+    print(*[city[0] for city in cityList], sep=", ")
 
     dbObj.close()
     dbase.close()
