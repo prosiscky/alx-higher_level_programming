@@ -1,11 +1,8 @@
 #!/usr/bin/python3
-import MySQLdb
-import sys
-
 """A script that lists all states from the database hbtn_0e_0_usa
 The states represents the columns in the Table
 
- REQUIREMENTS
+# REQUIREMENTS
 
 - This script should take 3 arguments:
 mysql username, mysql password and database name
@@ -14,6 +11,9 @@ mysql username, mysql password and database name
 - The result of the query is ordered by the Auto generated
 id hence no need for order by clause
 """
+import MySQLdb
+import sys
+
 if __name__ == "__main__":
     dbase = MySQLdb.connect(
         user=sys.argv[1],
