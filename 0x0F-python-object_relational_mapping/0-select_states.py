@@ -19,13 +19,13 @@ if __name__=="__main__":
         user=sys.argv[1],
         passwd=sys.argv[2],
         db=sys.argv[3],
-        host='localhost',
+        host="localhost",
         port=3306
     )
     dbObj = dbase.cursor()
     dbObj.execute("SELECT * FROM states")
     stateList = dbObj.fetchall()
-    for state in states:
+    for state in stateList:
         print(state)
     dbObj.close()
     dbase.close()
