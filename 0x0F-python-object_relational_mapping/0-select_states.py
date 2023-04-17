@@ -6,14 +6,14 @@ import sys
 The states represents the columns in the Table
 """
 # REQUIREMENTS
-'''
+"""
 - This script should take 3 arguments:
 mysql username, mysql password and database name
 (no argument validation needed)
 
 - The result of the query is ordered by the Auto generated
 id hence no need for order by clause
-'''
+"""
 if __name__ == "__main__":
     dbase = MySQLdb.connect(
         user=sys.argv[1],
