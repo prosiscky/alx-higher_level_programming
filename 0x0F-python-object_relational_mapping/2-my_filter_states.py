@@ -15,11 +15,12 @@ if __name__ == "__main__":
         host='localhost',
         port=3306
     )
-    state=sys.argv[4]
-      dbObj = dbase.cursor()
-    dbObj.execute("SELECT * FROM states WHERE Binary name ='%s'",(state,))
+    state = sys.argv[4]
+    dbObj = dbase.cursor()
+    dbObj.execute("SELECT * FROM states WHERE Binary name ='%s'", (state,))
     stateList = dbObj.fetchall()
     for records in stateList:
         print(records)
+
     dbObj.close()
     dbase.close()
