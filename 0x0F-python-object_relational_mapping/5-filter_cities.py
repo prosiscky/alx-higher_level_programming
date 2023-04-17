@@ -19,7 +19,7 @@ if __name__ == "__main__":
     state = sys.argv[4]
     dbObj = dbase.cursor()
     dbObj.execute("SELECT cities.name FROM cities INNER JOIN states ON\
-            states.id=cities.state_id WHERE Binary states.name\
+            states.id=cities.state_id WHERE states.name\
             LIKE %s", (state, ))
     stateList = dbObj.fetchall()
     for records in stateList:
