@@ -17,7 +17,7 @@ if __name__ == "__main__":
     dbObj = dbase.cursor()
     dbObj.execute("SELECT * FROM states WHERE name LIKE BINARY 'N%'")
     stateList = dbObj.fetchall()
-    for state instates:
+    for state in stateList:
         print(state)
     dbObj.close()
     dbase.close()
