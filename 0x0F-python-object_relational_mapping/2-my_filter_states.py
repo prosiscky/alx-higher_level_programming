@@ -17,7 +17,7 @@ if __name__ == "__main__":
     )
     state = sys.argv[4]
     dbObj = dbase.cursor()
-    dbObj.execute("SELECT * FROM states WHERE Binary name ='%s'", (state,))
+    dbObj.execute("SELECT * FROM states WHERE Binary name ='{}'".format(state))
     stateList = dbObj.fetchall()
     for records in stateList:
         print(records)
