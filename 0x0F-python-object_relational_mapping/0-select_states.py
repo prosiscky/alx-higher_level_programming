@@ -4,9 +4,9 @@ import sys
 
 """A script that lists all states from the database hbtn_0e_0_usa
 The states represents the columns in the Table
-"""
-# REQUIREMENTS
-"""
+
+ REQUIREMENTS
+
 - This script should take 3 arguments:
 mysql username, mysql password and database name
 (no argument validation needed)
