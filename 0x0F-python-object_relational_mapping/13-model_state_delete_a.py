@@ -8,7 +8,7 @@ mysql username, mysql password and database name
 - You must import State and Base from model_state - from
 model_state import Base, State
 - Your script should connect to a MySQL server running on localhost at
-port 3306
+port 3306(default port)
 - Your code should not be executed when imported
 """
 import sys
