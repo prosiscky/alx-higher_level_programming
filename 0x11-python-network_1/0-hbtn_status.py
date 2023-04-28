@@ -21,4 +21,3 @@ with urllib.request.urlopen(url) as resp:
         print(f"\t- type: {type(content)}")
         print(f"\t- content: {content}")
         print(f"\t- utf8 content: {utf8_content}")
-
