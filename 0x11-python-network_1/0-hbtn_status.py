@@ -1,7 +1,7 @@
-#!/usr/bin/python3
+#!/usr/bin/p ython3
 
 
-"""Python script that fetches https://alx-intranet.hbtn.io/status
+"""Pytihon script that fetches https://alx-intranet.hbtn.io/status
 REQUIREMENTS:
 You must use the package urllib
 You are not allowed to import any packages other than urllib
@@ -18,6 +18,6 @@ with urllib.request.urlopen(url) as resp:
         utf8_content = content.decode('utf-8')
 
         print("Body response:")
-        print(f"\t- type: {type(content)}")
-        print(f"\t- content: {content}")
-        print(f"\t- utf8 content: {utf8_content}")
+        print("\t- type: {}".format(type(content)))
+        print("\t- content: {}".format(content))
+        print("\t- utf8 content: {}".format(content.decode('utf-8')))
