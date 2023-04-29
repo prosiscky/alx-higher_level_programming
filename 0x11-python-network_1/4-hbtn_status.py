@@ -10,6 +10,7 @@ The body of the response must be display like the
  example (tabulation before -)
 """
 
+
 import requests
 
 
