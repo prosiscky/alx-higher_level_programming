@@ -12,14 +12,10 @@ You must use a with statement"""
 import urllib.request
 
 if __name__ == "__main__":
-
-	url = "https://alx-intranet.hbtn.io/status"
-
-	with urllib.request.urlopen(url) as resp:
-    		content = respo.read()
-    		utf8_content = content.decode('utf-8')
-
-	print("Body response:")
-	print("\t- type: {}".format(type(content)))
-	print("\t- content: {}".format(content))
-	print("\t- utf8 content: {}".format(utf8_content)))
+    url = 'https://alx-intranet.hbtn.io/status'
+    with urllib.request.urlopen(url) as resp:
+        content = resp.read()
+        print('Body response:')
+        print(f'\t- type: {type(content)}')
+        print(f'\t- content: {content}')
+        print(f'\t- utf8 content: {content.decode("utf-8")}')
