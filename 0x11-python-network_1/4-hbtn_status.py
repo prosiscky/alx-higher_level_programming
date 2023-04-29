@@ -1,9 +1,8 @@
 #!/usr/bin/python3
 
 """
-Write a Python script that fetches
-     https://alx-intranet.hbtn.io/status
-
+Write a Python script that fetches https://alx-intranet.hbtn.io/status
+REQUIREMENTS:
 You must use the package requests
 You are not allow to import packages other than requests
 The body of the response must be display like the
