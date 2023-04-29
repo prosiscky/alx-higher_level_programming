@@ -1,16 +1,20 @@
 #!/usr/bin/python3
+"""lists the 10 most recent commits on a given GitHub repository.
 """
-list 10 commits (from the most recent to oldest) of the repository
-“rails” by the user “rails”
-"""
-
-
 import sys
 import requests
 
 
 if __name__ == "__main__":
-    url = f"https://api.github.com/repos/{sys.argv[2]}/{sys.argv[1]}/commits"
+    url = "https://api.github.com/repos/{}/{}/commits".format(
+        sys.argv[2], sys.argv[1])
+
     r = requests.get(url)
-    for commit in r.json()[:10]:
-        print(f"{commit['sha']}: {commit['commit']['author']['name']}")
+    commits = r.json()
+    try:
+        for i in range(10):
+            print("{}: {}".format(
+                commits[i].get("sha"),
+                commits[i].get("commit").get("author").get("name")))
+    except IndexError:
+        pass
