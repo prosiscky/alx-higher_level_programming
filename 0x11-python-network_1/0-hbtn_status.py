@@ -1,12 +1,15 @@
 #!/usr/bin/python3
 
 
-"""Python script that fetches https://alx-intranet.hbtn.io/status
+"""
+Python script that fetches https://alx-intranet.hbtn.io/status
 REQUIREMENTS:
 You must use the package urllib
 You are not allowed to import any packages other than urllib
-The body of the response must be displayed like the following example (tabulation before -)
-You must use a with statement"""
+The body of the response must be displayed like the following
+example (tabulation before -)
+You must use a with statement
+"""
 
 
 import urllib.request
