@@ -12,11 +12,9 @@ The body of the response must be display like the
 
 import requests
 
-def fetch_status():
-    url = 'https://alx-intranet.hbtn.io/status'
-    response = requests.get(url)
-    return response.text
 
-if __name__ == '__main__':
-    status = fetch_status()
-    print("- type: {}\n- content: {}".format(type(status), status))
+if __name__ == "__main__":
+    resp = requests.get("https://intranet.hbtn.io/status")
+    print("Body response:")
+    print("\t- type: {}".format(type(resp.text)))
+    print("\t- content: {}".format(resp.text))
