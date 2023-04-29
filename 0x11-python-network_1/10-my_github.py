@@ -1,7 +1,9 @@
 #!/usr/bin/python3
 
+
 """
-A  Python script that takes your GitHub credentials (username and password)
+A  Python script that takes your GitHub credentials
+(username and password)
 and uses the GitHub API to display your id
 REQUIREMENTS:
 You must use Basic Authentication with a personal access token
