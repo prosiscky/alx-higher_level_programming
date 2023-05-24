@@ -1,5 +1,6 @@
-#!/iusr/bin/node
+#!/usr/bin/node
 // a script that writes data to a file
+
 // Import object fs into a variable fs
 const fs = require('fs');
 
